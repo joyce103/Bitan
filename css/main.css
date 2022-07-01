@@ -1,0 +1,341 @@
+html {
+	font-family: 'Noto Sans TC', sans-serif;
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+ 	font-smooth: always;
+ }
+.back{
+	width: 100%;
+	padding-bottom: 56.25%;
+	position:relative;
+	background-image: url("../img/test2.png");
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+	z-index:0;
+	/*動畫*/
+	animation: slide ease 4s 1;
+	opacity: 0;
+	animation-fill-mode:forwards;
+
+}
+
+
+.back_1{
+	width: 100%;
+	padding-bottom: 56.25%;
+	top:0;
+	left: 0;
+	position:absolute;
+	background-image: url("../img/test4.png");
+	-moz-background-size:contain;
+	-webkit-background-size:contain;
+	-o-background-size:contain;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;
+	z-index: 1;
+	/*動畫*/
+	animation: oneback ease  3s 1 ;
+	opacity: 0;
+	animation-fill-mode:forwards;
+}
+
+.back_2{
+	width: 100%;
+	padding-bottom: 56.25%;
+	top:0;
+	left: 0;
+	position:absolute;
+	background-image: url("../img/test3.png");
+	-moz-background-size:contain;
+	-webkit-background-size:contain;
+	-o-background-size:contain;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;
+	z-index: 2;
+	/*動畫*/
+	animation: twoback ease  3s  1 1s;
+	opacity: 0;
+	animation-fill-mode:forwards;
+
+}
+
+.back_3{
+	width: 100%;
+	padding-bottom: 56.25%;
+	top:0;
+	left: 0;
+	position:absolute;
+	background-image: url("../img/test.png");
+	-moz-background-size:contain;
+	-webkit-background-size:contain;
+	-o-background-size:contain;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;
+	z-index: 3;
+	/*動畫*/
+	animation: threeback ease  3s  1 1.5s;
+	opacity: 0;
+	animation-fill-mode:forwards;
+}
+
+.text{
+	width: 100%;
+	padding-bottom: 56.25%;
+	top:0;
+	left: 0;
+	position:absolute;
+	background-image: url("../img/text.png");
+	-moz-background-size:contain;
+	-webkit-background-size:contain;
+	-o-background-size:contain;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;
+	z-index: 4;
+	/*動畫*/
+	animation:textin ease 3s 1 2s;
+	opacity: 0;
+	animation-fill-mode:forwards;
+
+}
+.flower{
+	width: 22%;
+	top:0;
+	left:0;
+	margin-left: 39%;
+	margin-top: 25%;
+	position:absolute;
+	z-index: 5;
+	/*動畫*/
+	animation: spin ease  5s  infinite;
+	animation-direction: reverse;
+	opacity: 0;
+	animation-fill-mode:forwards;
+}
+.flower_1{
+	width: 25%;
+	top:0;
+	left:0;
+	margin-left: 5%;
+	margin-top: -8%;
+	position:absolute;
+	z-index: 6;
+	/*動畫*/
+	animation: spin ease  7s  1 2.5s;
+	opacity: 0;
+	animation-fill-mode:forwards;
+}
+.flower_2{
+	width: 15%;
+	top:0;
+	left:0;
+	margin-left: 8%;
+	margin-top: 18%;
+	position:absolute;
+	z-index: 7;
+	/*動畫*/
+	animation: twospin ease  3s  1 4s;
+	opacity: 0;
+	animation-fill-mode:forwards;
+
+}
+.bar{
+	color: #182987;
+	margin-top: -8%;
+	opacity: 0;
+	/*動畫*/
+	animation: textbar ease  2s 1 3s;
+	animation-fill-mode:forwards;
+}
+.a{
+	overflow: hidden; 
+}
+.back_ani{
+	animation: re_ani linear 3s infinite;	
+}
+.back_flash{
+	animation: reflash linear 3s infinite;	
+}
+.back_flash_slow{
+	animation: reflash linear 8s infinite;	
+}
+.flower_ani{
+	animation: respin ease 13s infinite;	
+}
+.flower_ani2{
+	animation: tworespin ease 13s infinite;	
+}
+
+@keyframes spin { 
+    0%{ 
+    	opacity: 0.5;
+        transform: rotate(0deg); 
+    } 
+
+    100%{ 
+    	opacity: 1;
+        transform: rotate(360deg);         
+    }
+}
+@keyframes twospin { 
+    0%{ 
+    	opacity: 0;
+        transform: rotate(0deg); 
+    } 
+
+    100%{ 
+    	opacity: 1;
+        transform: rotate(-360deg);         
+    }
+}
+@keyframes textin{
+	0%{
+		padding-bottom: 0;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		padding-bottom: 56.25%;
+		opacity: 1;
+	}
+
+}
+@keyframes slide{
+	0%{
+		padding-bottom: 0;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		padding-bottom: 56.25%;
+		opacity: 1;
+	}
+
+}
+@keyframes oneback{
+	0%{
+		padding-bottom: 0;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		padding-bottom: 56.25%;
+		opacity: 1;
+	}
+
+}
+@keyframes twoback{
+	0%{
+		padding-bottom: 0;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		padding-bottom:54%;
+		opacity: 1;
+	}
+
+}
+@keyframes threeback{
+	0%{
+		padding-bottom: 0;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		padding-bottom: 56.25%;
+		opacity: 1;
+	}
+
+}
+@keyframes textbar{
+	0%{
+		margin-top: 0;
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		margin-top: -8%;
+		opacity: 1;
+	}
+
+}
+/*持續浮動*/
+@keyframes re_ani{
+	0%{
+		opacity: 1;
+		padding-bottom: 54%;
+	}
+	50%{
+		padding-bottom: 56.25%;
+	}
+	100%{
+		opacity: 1;
+		padding-bottom: 54%;
+
+	}
+}
+
+/*持續旋轉*/
+@keyframes respin{
+    0%{ 
+    	opacity: 0.8;
+        transform: rotate(0deg); 
+    } 
+    50%{
+    	opacity: 1;
+        transform: rotate(360deg);     
+    }
+
+    100%{ 
+    	opacity: 0.8;
+        transform: rotate(0deg);         
+    }
+}
+@keyframes tworespin{
+    0%{ 
+    	opacity: 1;
+        transform: rotate(360deg); 
+    } 
+    50%{
+    	opacity: 0.8;
+        transform: rotate(0deg);     
+    }
+
+    100%{ 
+    	opacity: 1;
+        transform: rotate(360deg);         
+    }
+}
+/*持續閃爍*/
+@keyframes reflash{
+    0%{ 
+    	opacity: 1;
+    } 
+    50%{
+    	opacity: 0.7; 
+    }
+
+    100%{ 
+    	opacity: 1;        
+    }
+}
